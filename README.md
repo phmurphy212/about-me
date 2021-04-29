@@ -14,7 +14,7 @@ Charlie Fadness
 
 ### Links and Resources
 * [submission PR](http://xyz.com)
-* Any Links you used as reference
+* Used this site to help with CSS: https://www.w3schools.com/css/css_text.asp
 
 
 ### Reflections and Comments
