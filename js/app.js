@@ -38,9 +38,9 @@ if(secondAnswer === 'yes' || secondAnswer === 'y'){
   alert('Actually I do! 2 beautiful girls!');
 } else if (invalidResponse >= 1) {
 //here's where I started doing too much. this checks the variable invalidResponse, and if it's value is greater than or equal to 1 it gives a less polite response, increments invalidResponse by 1, and logs an invalid response to console
-invalidResponse ++;
-console.log('Invalid Responses: ' + invalidResponse);
-alert('Again?! Yes or no only!');
+  invalidResponse ++;
+  console.log('Invalid Responses: ' + invalidResponse);
+  alert('Again?! Yes or no only!');
 } else {
 //this means it's the users first invalid response, I return the polite response, and log the invalidResponse
   invalidResponse ++;
@@ -115,3 +115,5 @@ if(fifthAnswer === 'yes' || fifthAnswer === 'y'){
   console.log('invalidResponses: ' + invalidResponse);
   alert('That was the last one, but I was actually looking for a yes or no answer');
 }
+
+alert('Thanks for playing ' + username + '! I hope you know me a little better now');
