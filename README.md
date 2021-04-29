@@ -18,5 +18,5 @@ Charlie Fadness
 
 
 ### Reflections and Comments
-* Consider including the answers to your daily journal and submission questions here
-* This is also a good place to reflect on the tools and resources used and learned
+- Lab-02
+  - Today I learned some very basic CSS, by going through some online guides. I also reminded myself how to count for a variable and increase it based on a certain outcome of code. I'd rather do this in a loop, but I couldn't figure that out very well. 
