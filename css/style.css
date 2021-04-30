@@ -1,5 +1,11 @@
-* {background-color: tan; font-size: 14px;}
-ul {padding-left: 25px; list-style: square; color: maroon;}
-ol {padding-left: 25px; list-style: upper-roman; color: maroon;}
+* {background-color: #ACC8D4;}
+ul {padding-left: 25px; list-style: square; color: #DD314A;}
+ol {padding-left: 25px; list-style: decimal;  color: #DD314A;}
 body {color: navy; text-align: left;}
-h1 {color: navy; font-size: 32px;}
+h1 {color: navy; font-size: 32px; padding: 25px; font-weight: bold;}
+h5 {color: #DD314A; font-size: 22px; padding-bottom: 10px; padding-left: 25px;}
+i {font-style: italic;}
+em {font-style: italic;}
+p {padding: 22px; font-size: 18px;}
+li {padding-top: 2px; padding-bottom: 2px; font-weight: bold;}
+img {max-width: 100%; height: auto; text-align: center;}
