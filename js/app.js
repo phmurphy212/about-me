@@ -162,13 +162,13 @@ if(fifthAnswer === 'yes' || fifthAnswer === 'y'){
 
 
 //Question 6----------------------------------------------------------------//
-let koreaVisits = '31';
+let koreaVisits = 31;
 let tooHigh = 0;
 let tooLow = 0;
 let i;
 for (i = 4; i > 0; i--){
   let sixthAnswer = prompt('Okay, let\'s play a guessing game! How many times have I been to South Korea?');
-  if (sixthAnswer === koreaVisits){
+  if (sixthAnswer == koreaVisits){
     alert(`That's right, I actually went to South Korea ${koreaVisits} times between the military and personal travel. It's my favorite country that I've visited!`);
     break;
     correctResponse++;
@@ -195,7 +195,7 @@ let ownedVehicles = ['Thunderbird', 'F-150', 'Impreza', 'Jetta', 'Altima'];
 let arrayLength = ownedVehicles.length;
 let chances = arrayLength;
 let rightAnswer = false;
-let seventhAnswer = prompt(`Okay ${username}, it's come down to this, one final question. Try to guess the types of cars that I have owned!`);
+let seventhAnswer = prompt(`Okay ${username}, it's come down to this, one final question. Try to guess one car that I have owned!`);
 while (chances > 0 && !rightAnswer){
   chances--;
   for (let i = 0; i < arrayLength; i++){

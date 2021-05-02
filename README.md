@@ -19,4 +19,7 @@ Charlie Fadness
 
 ### Reflections and Comments
 - Lab-02
-  - Today I learned some very basic CSS, by going through some online guides. I also reminded myself how to count for a variable and increase it based on a certain outcome of code. I'd rather do this in a loop, but I couldn't figure that out very well. 
+  - Today I learned some very basic CSS, by going through some online guides. I also reminded myself how to count for a variable and increase it based on a certain outcome of code. I'd rather do this in a loop, but I couldn't figure that out very well.
+
+- Lab-03
+  - Well I learned pretty much everything that I  *knew* I would be learning in the course in a single day. I got some thing of a grasp on for and while loops. I also figured out quite a bit more about the functionality of javascript and how the components work together. All in all, pretty fun day with a lot of new skills!
