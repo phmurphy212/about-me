@@ -7,7 +7,7 @@ ol {padding-left: 25px; list-style: decimal;  color: #DD314A;}
 body {
   background-color: teal; 
   text-align: left;
-  width: 85%;
+  width: 90%;
   margin-left: 5%;
   font-family: Verdana, Geneva, Tahoma, sans-serif
 }
@@ -36,12 +36,21 @@ li {padding-top: 2px;
     color: purple;
   }
 
-img {max-width: 100%; height: auto; }
-/* #family img {
-  max-width: 100%; 
-  height: auto; */
-/* #dtp img {
-  width: 100px;
-  height: 100px; */
+/* img {max-width: 100%; height: auto; } */
+#family{
+  max-width: 100%;
+  height: auto;
+}
+#dtp {
+  max-width: 350px;
+  max-height: auto;
+  float: right;
+  padding: 5px;
+}
+#zamami {
+float: right;
+max-width: 55%;
+max-height: auto;
+padding-right: 50px;
 }
 
