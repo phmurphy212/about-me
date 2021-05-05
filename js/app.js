@@ -170,8 +170,8 @@ for (i = 4; i > 0; i--){
   let sixthAnswer = prompt('Okay, let\'s play a guessing game! How many times have I been to South Korea?');
   if (sixthAnswer == koreaVisits){
     alert(`That's right, I actually went to South Korea ${koreaVisits} times between the military and personal travel. It's my favorite country that I've visited!`);
-    break;
     correctResponse++;
+    break;
   } else if (sixthAnswer > koreaVisits){
     alert(`That's too high, guess again! You have ${i - 1} guesses remaining.`);
     tooHigh++;
