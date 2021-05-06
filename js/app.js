@@ -167,8 +167,8 @@ let tooHigh = 0;
 let tooLow = 0;
 let i;
 for (i = 4; i > 0; i--){
-  let sixthAnswer = prompt('Okay, let\'s play a guessing game! How many times have I been to South Korea?');
-  if (sixthAnswer == koreaVisits){
+  let sixthAnswer = prompt(parseInt('Okay, let\'s play a guessing game! How many times have I been to South Korea?'));
+  if (sixthAnswer === koreaVisits){
     alert(`That's right, I actually went to South Korea ${koreaVisits} times between the military and personal travel. It's my favorite country that I've visited!`);
     correctResponse++;
     break;
