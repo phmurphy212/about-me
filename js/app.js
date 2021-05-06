@@ -10,30 +10,34 @@ let username = prompt('What is your name, pal?');
 console.log('username: ' + username);
 alert('Hi ' + username + ', welcome! Please answer the following questions about me with yes or no answers.');
 
-//Question 1----------------------------------------------------------------//
+//Question 1---------------------------------------------------------//
 
 
 // //define question, log answer to the console
-let firstAnswer = prompt('Am I married? ').toLowerCase();
-console.log('firstAnswer: ' + firstAnswer);
+function questionOne (){
+  let firstAnswer = prompt('Am I married? ').toLowerCase();
+  console.log('firstAnswer: ' + firstAnswer);
 
-// //if user answers any capitalization pattern of yes, no, y, or n response will be given for the corresponding step. For the correct step, the *Response variable will count by one.
-if(firstAnswer === 'yes' || firstAnswer === 'y'){
-  alert('I am! Hard to believe right?');
-  correctResponse ++;
-  // console.log('That\'s correct');
-  // console.log('correctResponses: ' +correctResponse);
-} else if (firstAnswer === 'no' || firstAnswer === 'n'){
-  alert('I\'ve been married for almost 10 years, my wife\'s name is Aileen (eye-lean)');
-  incorrectResponse ++;
-  // console.log('That\'s incorrect');
-  // console.log('incorrectResponses: ' +incorrectResponse);
-} else {
-// The user will get a sassy response if they continue answering with other than accepted answers
-  invalidResponse ++;
-  alert('Please answer only with yes or no');
-  // console.log('Invalid Responses: ' + invalidResponse);
+  // //if user answers any capitalization pattern of yes, no, y, or n response will be given for the corresponding step. For the correct step, the *Response variable will count by one.
+  if(firstAnswer === 'yes' || firstAnswer === 'y'){
+    alert('I am! Hard to believe right?');
+    correctResponse ++;
+    // console.log('That\'s correct');
+    // console.log('correctResponses: ' +correctResponse);
+  } else if (firstAnswer === 'no' || firstAnswer === 'n'){
+    alert('I\'ve been married for almost 10 years, my wife\'s name is Aileen (eye-lean)');
+    incorrectResponse ++;
+    // console.log('That\'s incorrect');
+    // console.log('incorrectResponses: ' +incorrectResponse);
+  } else {
+  // The user will get a sassy response if they continue answering with other than accepted answers
+    invalidResponse ++;
+    alert('Please answer only with yes or no');
+    // console.log('Invalid Responses: ' + invalidResponse);
+  }
 }
+questionOne ();
+
 // Question 2--------------------------------------------------------------//
 
 
