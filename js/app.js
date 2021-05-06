@@ -138,35 +138,36 @@ questionFour ();
 
 //Question 5------------------------------------------------------------------//
 
+function questionFive (){
+  //define question, log answer to the console
+  let fifthAnswer = prompt('Is my favorite movie genre comedy?').toLowerCase();
+  console.log('fifthAnswer: ' + fifthAnswer);
 
-//define question, log answer to the console
-let fifthAnswer = prompt('Is my favorite movie genre comedy?').toLowerCase();
-console.log('fifthAnswer: ' + fifthAnswer);
 
+  //if user answers any capitalization pattern of yes, no, y, or n response will be given for the corresponding step. For the correct step, the *Response variable will count by one.
+  if(fifthAnswer === 'yes' || fifthAnswer === 'y'){
+    alert('Correct, my favorite movie is actually Dodgeball');
+    correctResponse ++;
+    // console.log('That\'s correct');
+    // console.log('correctResponses: ' +correctResponse);
+  } else if (fifthAnswer === 'no' || fifthAnswer === 'n'){
+    alert('No, my favorite genre actually is comedy, though I mostly watch kids movies these days');
+    incorrectResponse ++;
+    // console.log('That\'s incorrect');
+    // console.log('incorrectResponses: ' +incorrectResponse);
+  } else if (invalidResponse >= 1){
+  //The user will get a sassy response if they continue answering with other than accepted answers
 
-//if user answers any capitalization pattern of yes, no, y, or n response will be given for the corresponding step. For the correct step, the *Response variable will count by one.
-if(fifthAnswer === 'yes' || fifthAnswer === 'y'){
-  alert('Correct, my favorite movie is actually Dodgeball');
-  correctResponse ++;
-  // console.log('That\'s correct');
-  // console.log('correctResponses: ' +correctResponse);
-} else if (fifthAnswer === 'no' || fifthAnswer === 'n'){
-  alert('No, my favorite genre actually is comedy, though I mostly watch kids movies these days');
-  incorrectResponse ++;
-  // console.log('That\'s incorrect');
-  // console.log('incorrectResponses: ' +incorrectResponse);
-} else if (invalidResponse >= 1){
-//The user will get a sassy response if they continue answering with other than accepted answers
-
-  invalidResponse ++;
-  // console.log('invalidResponses: ' + invalidResponse);
-  alert('I give up, no more questions, I just wanted a simple yes or no');
-} else {
-  invalidResponse ++;
-  // console.log('invalidResponses: ' + invalidResponse);
-  alert('That was the last one, but I was actually looking for a yes or no answer');
+    invalidResponse ++;
+    // console.log('invalidResponses: ' + invalidResponse);
+    alert('I give up, no more questions, I just wanted a simple yes or no');
+  } else {
+    invalidResponse ++;
+    // console.log('invalidResponses: ' + invalidResponse);
+    alert('That was the last one, but I was actually looking for a yes or no answer');
+  }
 }
-
+questionFive ();
 
 //Question 6----------------------------------------------------------------//
 let koreaVisits = 31;
