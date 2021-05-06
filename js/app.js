@@ -40,35 +40,36 @@ questionOne ();
 
 // Question 2--------------------------------------------------------------//
 
+function questionTwo (){
+  // //define question, log answer to the console
+  let secondAnswer = prompt('Okay, that wasn\'t too terrible, was it? Let\'s do some more... do I have any kids?').toLowerCase();
+  console.log('secondAnswer: ' + secondAnswer);
 
-// //define question, log answer to the console
-let secondAnswer = prompt('Okay, that wasn\'t too terrible, was it? Let\'s do some more... do I have any kids?').toLowerCase();
-console.log('secondAnswer: ' + secondAnswer);
 
+  // //if user answers any capitalization pattern of yes, no, y, or n response will be given for the corresponding step. For the correct step, the *Response variable will count by one.
+  if(secondAnswer === 'yes' || secondAnswer === 'y'){
+    alert('Shocking, but true!');
+    correctResponse ++;
+    // console.log('That\'s correct');
+    // console.log('correctResponses: ' +correctResponse);
+  } else if (secondAnswer === 'no' || secondAnswer === 'n'){
+    alert('Actually I do! 2 beautiful girls!');
+    incorrectResponse ++;
+    // console.log('That\'s incorrect');
+    // console.log('incorrectResponses: ' +incorrectResponse);
+  } else if (invalidResponse >= 1) {
+  // The user will get a sassy response if they continue answering with other than accepted answers
 
-// //if user answers any capitalization pattern of yes, no, y, or n response will be given for the corresponding step. For the correct step, the *Response variable will count by one.
-if(secondAnswer === 'yes' || secondAnswer === 'y'){
-  alert('Shocking, but true!');
-  correctResponse ++;
-  // console.log('That\'s correct');
-  // console.log('correctResponses: ' +correctResponse);
-} else if (secondAnswer === 'no' || secondAnswer === 'n'){
-  alert('Actually I do! 2 beautiful girls!');
-  incorrectResponse ++;
-  // console.log('That\'s incorrect');
-  // console.log('incorrectResponses: ' +incorrectResponse);
-} else if (invalidResponse >= 1) {
-// The user will get a sassy response if they continue answering with other than accepted answers
-
-  invalidResponse ++;
-  // console.log('Invalid Responses: ' + invalidResponse);
-  alert('Again?! Yes or no only!');
-} else {
-  invalidResponse ++;
-  // console.log('Invalid Responses: ' + invalidResponse);
-  alert('Please answer only with yes or no');
+    invalidResponse ++;
+    // console.log('Invalid Responses: ' + invalidResponse);
+    alert('Again?! Yes or no only!');
+  } else {
+    invalidResponse ++;
+    // console.log('Invalid Responses: ' + invalidResponse);
+    alert('Please answer only with yes or no');
+  }
 }
-
+questionTwo ();
 
 //Question 3-----------------------------------------------------------------//
 
