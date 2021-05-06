@@ -170,32 +170,35 @@ function questionFive (){
 questionFive ();
 
 //Question 6----------------------------------------------------------------//
-let koreaVisits = 31;
-let tooHigh = 0;
-let tooLow = 0;
-let i;
-for (i = 4; i > 0; i--){
-  let sixthAnswer = prompt('Okay, let\'s play a guessing game! How many times have I been to South Korea?');
-  if (sixthAnswer == koreaVisits){
-    alert(`That's right, I actually went to South Korea ${koreaVisits} times between the military and personal travel. It's my favorite country that I've visited!`);
-    correctResponse++;
-    break;
-  } else if (sixthAnswer > koreaVisits){
-    alert(`That's too high, guess again! You have ${i - 1} guesses remaining.`);
-    tooHigh++;
-    incorrectResponse++;
-  } else {
-    alert(`That's too low, give it another try! You have ${i -1} guesses remaining.`);
-    tooLow++;
+function questionSix (){
+  let koreaVisits = 31;
+  let tooHigh = 0;
+  let tooLow = 0;
+  let i;
+  for (i = 4; i > 0; i--){
+    let sixthAnswer = prompt('Okay, let\'s play a guessing game! How many times have I been to South Korea?');
+    if (sixthAnswer == koreaVisits){
+      alert(`That's right, I actually went to South Korea ${koreaVisits} times between the military and personal travel. It's my favorite country that I've visited!`);
+      correctResponse++;
+      break;
+    } else if (sixthAnswer > koreaVisits){
+      alert(`That's too high, guess again! You have ${i - 1} guesses remaining.`);
+      tooHigh++;
+      incorrectResponse++;
+    } else {
+      alert(`That's too low, give it another try! You have ${i -1} guesses remaining.`);
+      tooLow++;
+    }
   }
-}
-if (i < 1){
-  alert (`Unfortunately you are out of guesses now. I've actually been to Korea ${koreaVisits} times!`);
-  incorrectResponse++;
-}
+  if (i < 1){
+    alert (`Unfortunately you are out of guesses now. I've actually been to Korea ${koreaVisits} times!`);
+    incorrectResponse++;
+  }
 
-console.log(`Too low: ${tooLow}`);
-console.log(`Too high: ${tooHigh}`);
+  console.log(`Too low: ${tooLow}`);
+  console.log(`Too high: ${tooHigh}`);
+}
+questionSix ();
 
 //Question7------------------------------------------------------------------//
 
