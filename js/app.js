@@ -201,32 +201,35 @@ function questionSix (){
 questionSix ();
 
 //Question7------------------------------------------------------------------//
-
-let ownedVehicles = ['Thunderbird', 'F-150', 'Impreza', 'Jetta', 'Altima'];
-let arrayLength = ownedVehicles.length;
-let chances = arrayLength;
-let rightAnswer = false;
-let seventhAnswer = prompt(`Okay ${username}, it's come down to this, one final question. Try to guess the model of one car that I have owned!`);
-while (chances > 0 && !rightAnswer){
-  chances--;
-  for (let i = 0; i < arrayLength; i++){
-    if (seventhAnswer === ownedVehicles[i]){
-      rightAnswer = true;
+function questionSeven (){
+  let ownedVehicles = ['Thunderbird', 'F-150', 'Impreza', 'Jetta', 'Altima'];
+  let arrayLength = ownedVehicles.length;
+  let chances = arrayLength;
+  let rightAnswer = false;
+  let seventhAnswer = prompt(`Okay ${username}, it's come down to this, one final question. Try to guess the model of one car that I have owned!`);
+  while (chances > 0 && !rightAnswer){
+    chances--;
+    for (let i = 0; i < arrayLength; i++){
+      if (seventhAnswer === ownedVehicles[i]){
+        rightAnswer = true;
+      }
+    }
+    if (rightAnswer){
+      alert(`Wow, great guess! I have owned a ${seventhAnswer}`);
+      correctResponse++;
+      alert(`The options you could've chosen were ${ownedVehicles}`);
+    } else {
+      seventhAnswer = prompt(`Not exactly, guess another time! You still have ${chances} chances left!`);
+      incorrectResponse++;
+    }
+    if (chances < 1){
+      incorrectResponse++;
+      alert(`The options you could've chosen were ${ownedVehicles}`);
     }
   }
-  if (rightAnswer){
-    alert(`Wow, great guess! I have owned a ${seventhAnswer}`);
-    correctResponse++;
-    alert(`The options you could've chosen were ${ownedVehicles}`);
-  } else {
-    seventhAnswer = prompt(`Not exactly, guess another time! You still have ${chances} chances left!`);
-    incorrectResponse++;
-  }
-  if (chances < 1){
-    incorrectResponse++;
-    alert(`The options you could've chosen were ${ownedVehicles}`);
-  }
 }
+questionSeven ();
+
 alert('Thanks for playing ' + username + '! I hope you know me a little better now');
 alert(`You did pretty well ${username}, you got ${correctResponse} correct answers out of 7!`);
 console.log('correctResponses: ' + correctResponse);
