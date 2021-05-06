@@ -24,3 +24,6 @@ Alex Payne (driver\): link-to-the-last-PR-you-made-as-Navigator
 
 - Lab-03
   - Well I learned pretty much everything that I  *knew* I would be learning in the course in a single day. I got some thing of a grasp on for and while loops. I also figured out quite a bit more about the functionality of javascript and how the components work together. All in all, pretty fun day with a lot of new skills!
+
+- Lab-04
+  - This lab was all about functions, and pair programming. To be honest, the functions part of us was mostly just a cursory glance at functions, and what their syntax looks like. The big thing that I really learned was a ton about git/GitHub and how those workflows work. I learned about pull requests, and how to fork code from another teammate/classmate in order to collaborate on a project. I did run into some issues, but with help from our fearless leader (Ryan) I was able to work it out, and learned some cool info in the process!
