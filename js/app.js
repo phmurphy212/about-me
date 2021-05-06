@@ -73,34 +73,35 @@ questionTwo ();
 
 //Question 3-----------------------------------------------------------------//
 
+function questionThree (){
+  // //define question, log answer to the console
+  let thirdAnswer = prompt('Now that you\'ve learned about my family, let\'s learn about my career! Did I serve in the Army?').toLowerCase();
+  console.log('thirdAnswer: ' + thirdAnswer);
 
-// //define question, log answer to the console
-let thirdAnswer = prompt('Now that you\'ve learned about my family, let\'s learn about my career! Did I serve in the Army?').toLowerCase();
-console.log('thirdAnswer: ' + thirdAnswer);
+  // //if user answers any capitalization pattern of yes, no, y, or n response will be given for the corresponding step. For the correct step, the *Response variable will count by one.
+  if(thirdAnswer === 'no' || thirdAnswer === 'n'){
+    alert('That\'s right, I was actually in the Air Force!');
+    correctResponse ++;
+    // console.log('That\'s correct');
+    // console.log('correctResponses: ' +correctResponse);
+  } else if (thirdAnswer === 'yes' || thirdAnswer === 'y'){
+    alert('Not the Army, but close, I was in the Air Force.');
+    incorrectResponse ++;
+    // console.log('That\'s incorrect');
+    // console.log('incorrectResponses: ' +incorrectResponse);
+  } else if (invalidResponse >= 1) {
+  //The user will get a sassy response if they continue answering with other than accepted answers
 
-// //if user answers any capitalization pattern of yes, no, y, or n response will be given for the corresponding step. For the correct step, the *Response variable will count by one.
-if(thirdAnswer === 'no' || thirdAnswer === 'n'){
-  alert('That\'s right, I was actually in the Air Force!');
-  correctResponse ++;
-  // console.log('That\'s correct');
-  // console.log('correctResponses: ' +correctResponse);
-} else if (thirdAnswer === 'yes' || thirdAnswer === 'y'){
-  alert('Not the Army, but close, I was in the Air Force.');
-  incorrectResponse ++;
-  // console.log('That\'s incorrect');
-  // console.log('incorrectResponses: ' +incorrectResponse);
-} else if (invalidResponse >= 1) {
-//The user will get a sassy response if they continue answering with other than accepted answers
-
-  invalidResponse ++;
-  // console.log('Invalid Responses: ' + invalidResponse);
-  alert('Come on, you\'re killing me Smalls. Please only reply with yes or no');
-} else {
-  invalidResponse ++;
-  // console.log('Invalid Responses: ' + invalidResponse);
-  alert('Please answer only with yes or no');
+    invalidResponse ++;
+    // console.log('Invalid Responses: ' + invalidResponse);
+    alert('Come on, you\'re killing me Smalls. Please only reply with yes or no');
+  } else {
+    invalidResponse ++;
+    // console.log('Invalid Responses: ' + invalidResponse);
+    alert('Please answer only with yes or no');
+  }
 }
-
+questionThree ();
 
 //Question 4--------------------------------------------------------------//
 
