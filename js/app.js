@@ -22,18 +22,13 @@ function questionOne (){
   if(firstAnswer === 'yes' || firstAnswer === 'y'){
     alert('I am! Hard to believe right?');
     correctResponse ++;
-    // console.log('That\'s correct');
-    // console.log('correctResponses: ' +correctResponse);
   } else if (firstAnswer === 'no' || firstAnswer === 'n'){
     alert('I\'ve been married for almost 10 years, my wife\'s name is Aileen (eye-lean)');
     incorrectResponse ++;
-    // console.log('That\'s incorrect');
-    // console.log('incorrectResponses: ' +incorrectResponse);
   } else {
   // The user will get a sassy response if they continue answering with other than accepted answers
     invalidResponse ++;
     alert('Please answer only with yes or no');
-    // console.log('Invalid Responses: ' + invalidResponse);
   }
 }
 questionOne ();
@@ -50,22 +45,16 @@ function questionTwo (){
   if(secondAnswer === 'yes' || secondAnswer === 'y'){
     alert('Shocking, but true!');
     correctResponse ++;
-    // console.log('That\'s correct');
-    // console.log('correctResponses: ' +correctResponse);
   } else if (secondAnswer === 'no' || secondAnswer === 'n'){
     alert('Actually I do! 2 beautiful girls!');
     incorrectResponse ++;
-    // console.log('That\'s incorrect');
-    // console.log('incorrectResponses: ' +incorrectResponse);
   } else if (invalidResponse >= 1) {
   // The user will get a sassy response if they continue answering with other than accepted answers
 
     invalidResponse ++;
-    // console.log('Invalid Responses: ' + invalidResponse);
     alert('Again?! Yes or no only!');
   } else {
     invalidResponse ++;
-    // console.log('Invalid Responses: ' + invalidResponse);
     alert('Please answer only with yes or no');
   }
 }
@@ -82,22 +71,16 @@ function questionThree (){
   if(thirdAnswer === 'no' || thirdAnswer === 'n'){
     alert('That\'s right, I was actually in the Air Force!');
     correctResponse ++;
-    // console.log('That\'s correct');
-    // console.log('correctResponses: ' +correctResponse);
   } else if (thirdAnswer === 'yes' || thirdAnswer === 'y'){
     alert('Not the Army, but close, I was in the Air Force.');
     incorrectResponse ++;
-    // console.log('That\'s incorrect');
-    // console.log('incorrectResponses: ' +incorrectResponse);
   } else if (invalidResponse >= 1) {
   //The user will get a sassy response if they continue answering with other than accepted answers
 
     invalidResponse ++;
-    // console.log('Invalid Responses: ' + invalidResponse);
     alert('Come on, you\'re killing me Smalls. Please only reply with yes or no');
   } else {
     invalidResponse ++;
-    // console.log('Invalid Responses: ' + invalidResponse);
     alert('Please answer only with yes or no');
   }
 }
@@ -115,22 +98,16 @@ function questionFour (){
   if(fourthAnswer === 'no' || fourthAnswer === 'n'){
     alert('That\'s true, I actually work for AWS');
     correctResponse ++;
-    // console.log('That\'s correct');
-    // console.log('correctResponses: ' +correctResponse);
   } else if (fourthAnswer === 'yes' || fourthAnswer === 'y'){
     alert('I don\'t, but I have interviewed with them before');
     incorrectResponse ++;
-    // console.log('That\'s incorrect');
-    // console.log('incorrectResponses: ' +incorrectResponse);
   } else if (invalidResponse >= 1){
   //The user will get a sassy response if they continue answering with other than accepted answers
 
     invalidResponse ++;
-    // console.log('Invalid Responses: ' + invalidResponse);
     alert('You\'ve got to be kidding me, yes or no only, please!');
   } else {
     invalidResponse ++;
-    // console.log('Invalid Responses: ' + invalidResponse);
     alert('Please answer only with yes or no');
   }
 }
@@ -148,22 +125,14 @@ function questionFive (){
   if(fifthAnswer === 'yes' || fifthAnswer === 'y'){
     alert('Correct, my favorite movie is actually Dodgeball');
     correctResponse ++;
-    // console.log('That\'s correct');
-    // console.log('correctResponses: ' +correctResponse);
   } else if (fifthAnswer === 'no' || fifthAnswer === 'n'){
     alert('No, my favorite genre actually is comedy, though I mostly watch kids movies these days');
     incorrectResponse ++;
-    // console.log('That\'s incorrect');
-    // console.log('incorrectResponses: ' +incorrectResponse);
   } else if (invalidResponse >= 1){
-  //The user will get a sassy response if they continue answering with other than accepted answers
-
     invalidResponse ++;
-    // console.log('invalidResponses: ' + invalidResponse);
     alert('I give up, no more questions, I just wanted a simple yes or no');
   } else {
     invalidResponse ++;
-    // console.log('invalidResponses: ' + invalidResponse);
     alert('That was the last one, but I was actually looking for a yes or no answer');
   }
 }

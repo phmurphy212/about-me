@@ -27,3 +27,6 @@ Alex Payne (driver\): link-to-the-last-PR-you-made-as-Navigator
 
 - Lab-04
   - This lab was all about functions, and pair programming. To be honest, the functions part of us was mostly just a cursory glance at functions, and what their syntax looks like. The big thing that I really learned was a ton about git/GitHub and how those workflows work. I learned about pull requests, and how to fork code from another teammate/classmate in order to collaborate on a project. I did run into some issues, but with help from our fearless leader (Ryan) I was able to work it out, and learned some cool info in the process!
+
+- Lab-05
+  - This was a really fun lab for me. I did get some practice with functions, which was nice. I had a lot of struggle remembering to take a certain index from the arrays that I was working with, but otherwise it wasn't too bad. This was the lab that has actually been the closest to my work, so I really enjoyed it. Also, I learned more about GitHub and how to branch and merge things correctly. That's a pretty cool thing to learn because I know that it actually applies to real life.
